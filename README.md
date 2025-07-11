@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌤️ Dashboard do Tempo
 
-## Getting Started
+Uma aplicação moderna para monitoramento de condições meteorológicas com dados em tempo real.
 
-First, run the development server:
+## ✨ Características
+
+- **Interface moderna e responsiva** - Design limpo e intuitivo
+- **Dados em tempo real** - Informações meteorológicas atualizadas
+- **Múltiplas cidades** - Acompanhe várias localidades simultaneamente
+- **Busca inteligente** - Sistema de geocoding para encontrar cidades
+- **Previsão estendida** - Dados para os próximos 7 dias
+- **Totalmente gratuito** - Sem necessidade de API keys ou limites
+
+## 🏆 API de Dados Meteorológicos
+
+Esta aplicação utiliza a **Open-Meteo** como fonte de dados meteorológicos:
+
+### 🌟 Open-Meteo
+
+- ✅ **Totalmente gratuita**
+- ✅ **Sem necessidade de API key**
+- ✅ **Sem limite de requisições**
+- ✅ **Dados precisos e atualizados**
+- ✅ **Suporte a múltiplos idiomas**
+- 🌐 **Site:** https://open-meteo.com/
+
+## 🚀 Tecnologias Utilizadas
+
+- **Next.js 15** - Framework React com App Router
+- **TypeScript** - Tipagem estática para JavaScript
+- **Tailwind CSS** - Framework de CSS utilitário
+- **React Query** - Gerenciamento de estado e cache de dados
+- **Axios** - Cliente HTTP para requisições
+- **React Icons** - Biblioteca de ícones
+- **Jest** - Framework de testes
+
+## 📦 Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone <url-do-repositorio>
+cd dashboard-tempo
+```
+
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Execute a aplicação:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Testes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Execute os testes com:
 
-## Learn More
+```bash
+npm test
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Estrutura do Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                 # App Router do Next.js
+├── components/          # Componentes React reutilizáveis
+├── hooks/              # Custom hooks
+├── services/           # Serviços de API
+├── types/              # Definições de tipos TypeScript
+├── config/             # Configurações da aplicação
+└── providers/          # Context providers
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌡️ Funcionalidades
 
-## Deploy on Vercel
+### Dados Meteorológicos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Temperatura atual e sensação térmica
+- Umidade relativa do ar
+- Pressão atmosférica
+- Velocidade e direção do vento
+- Precipitação atual
+- Cobertura de nuvens
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Previsão do Tempo
+
+- Previsão de 7 dias
+- Temperaturas máximas e mínimas
+- Probabilidade de precipitação
+- Códigos de condições meteorológicas
+
+### Interface
+
+- Cards responsivos para cada cidade
+- Sistema de busca com sugestões
+- Atualização automática dos dados
+- Indicadores de carregamento e erro
+- Design otimizado para mobile e desktop
+
+## 🛠️ Desenvolvimento
+
+Para contribuir com o projeto:
+
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -am 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Desenvolvido com ❤️ usando dados meteorológicos gratuitos da Open-Meteo
